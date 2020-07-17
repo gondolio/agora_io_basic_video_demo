@@ -178,16 +178,14 @@
     }
 
     function serializeformData() {
-/*       var formData = $("#form").serializeArray()
+      var formData = $("#form").serializeArray()
       var obj = {}
       for (var item of formData) {
         var key = item.name
         var val = item.value
         obj[key] = val
       }
- */
-      // Hard-code AppID here for now
-      var obj = {}
+      // Hard-code AppID/Channel/Token here for now
       obj['appID'] = "92b2371611d64f9ca7eb2cd0e8df207c"
       obj['channel'] = 'test17jul2020'
       obj['token'] = '00692b2371611d64f9ca7eb2cd0e8df207cIAC037zkZLilXQ9zzjUenXqFrMmwij1Q2Jh88eiXjSHwwZ9w43YAAAAAEACa30iX4X8SXwEAAQDhfxJf'
