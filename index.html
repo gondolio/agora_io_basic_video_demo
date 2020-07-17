@@ -22,7 +22,7 @@
       <div class="col" style="min-width: 433px; max-width: 443px">
         <div class="card" style="margin-top: 0px; margin-bottom: 0px;">
           <div class="row card-content" style="margin-bottom: 0px;">
-              <div class="input-field">
+<!--               <div class="input-field">
                 <label for="appID" class="active">App ID</label>
                 <input type="text" placeholder="App ID" name="appID">
               </div>
@@ -33,7 +33,7 @@
               <div class="input-field">
                 <label for="token" class="active">Token</label>
                 <input type="text" placeholder="token" name="token">
-              </div>
+              </div> -->
               <div class="row" style="margin: 0">
                 <div class="col s12">
                 <button class="btn btn-raised btn-primary waves-effect waves-light" id="join">JOIN</button>
@@ -178,13 +178,19 @@
     }
 
     function serializeformData() {
-      var formData = $("#form").serializeArray()
+/*       var formData = $("#form").serializeArray()
       var obj = {}
       for (var item of formData) {
         var key = item.name
         var val = item.value
         obj[key] = val
       }
+ */
+      // Hard-code AppID here for now
+      var obj = {}
+      obj['appID'] = "92b2371611d64f9ca7eb2cd0e8df207c"
+      obj['channel'] = 'test17jul2020'
+      obj['token'] = '00692b2371611d64f9ca7eb2cd0e8df207cIAC037zkZLilXQ9zzjUenXqFrMmwij1Q2Jh88eiXjSHwwZ9w43YAAAAAEACa30iX4X8SXwEAAQDhfxJf'
       return obj
     }
 
